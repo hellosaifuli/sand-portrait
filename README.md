@@ -16,7 +16,7 @@ Any image, as sand. Dots rise from a pile of sand into a portrait, then scatter 
 
 ```html
 <canvas id="me" style="width: 400px; height: 500px"></canvas>
-<script src="https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@main/sand-portrait.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@v1.0.0/sand-portrait.js"></script>
 <script>
   SandPortrait(document.getElementById('me'), { src: 'me.png' });
 </script>
@@ -25,7 +25,7 @@ Any image, as sand. Dots rise from a pile of sand into a portrait, then scatter 
 Or as a module:
 
 ```js
-import SandPortrait from 'https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@main/sand-portrait.mjs';
+import SandPortrait from 'https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@v1.0.0/sand-portrait.mjs';
 
 const sand = SandPortrait(canvas, { src: 'me.png', on: 'dark', color: '#fff' });
 ```
