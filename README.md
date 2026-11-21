@@ -10,13 +10,13 @@ Any image, as sand. Dots rise from a pile of sand into a portrait, then scatter 
 - Honours `prefers-reduced-motion`, pauses off screen, redraws on resize
 - Photos, logos and wordmarks (`SandPortrait.text`)
 
-**[Live demo](https://hellosaifuli.github.io/sand-portrait/)**: drop in your own photo or type a word. Running on [hellosaiful.com](https://www.hellosaiful.com).
+**[Live demo](https://www.hellosaiful.com/lab/sand-portrait/)**: drop in your own photo or type a word. The same effect runs on [hellosaiful.com](https://www.hellosaiful.com).
 
 ## Use it
 
 ```html
 <canvas id="me" style="width: 400px; height: 500px"></canvas>
-<script src="https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@1/sand-portrait.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@main/sand-portrait.js"></script>
 <script>
   SandPortrait(document.getElementById('me'), { src: 'me.png' });
 </script>
@@ -25,7 +25,7 @@ Any image, as sand. Dots rise from a pile of sand into a portrait, then scatter 
 Or as a module:
 
 ```js
-import SandPortrait from 'https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@1/sand-portrait.mjs';
+import SandPortrait from 'https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@main/sand-portrait.mjs';
 
 const sand = SandPortrait(canvas, { src: 'me.png', on: 'dark', color: '#fff' });
 ```

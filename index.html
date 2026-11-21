@@ -19,6 +19,7 @@
   .logo { font: 800 22px/1 "Bricolage Grotesque", sans-serif; letter-spacing: -.03em; text-decoration: none; }
   .logo i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--orange); margin-left: 2px; }
   .mono { font: 500 12px/1 "Geist Mono", monospace; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  header a.mono, footer a { display: inline-block; padding: 14px 6px; margin: -14px -6px; }  /* 40px+ tap targets */
   .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; padding: 32px 0 56px; }
   h1 { font: 800 clamp(44px, 7vw, 88px)/.92 "Bricolage Grotesque", sans-serif; letter-spacing: -.05em; margin: 16px 0 20px; }
   mark { background: none; color: #111; position: relative; white-space: nowrap; isolation: isolate; }
@@ -83,13 +84,13 @@
     </div>
     <pre><code><span class="c">&lt;!-- script tag --&gt;</span>
 &lt;canvas id="me" style="width:400px;height:500px"&gt;&lt;/canvas&gt;
-&lt;script src="<span class="s">https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@1/sand-portrait.js</span>"&gt;&lt;/script&gt;
+&lt;script src="<span class="s">https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@main/sand-portrait.js</span>"&gt;&lt;/script&gt;
 &lt;script&gt;
   SandPortrait(document.getElementById('me'), { src: <span class="s">'me.png'</span> });
 &lt;/script&gt;
 
 <span class="c">// or as a module</span>
-import SandPortrait from <span class="s">'https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@1/sand-portrait.mjs'</span>;
+import SandPortrait from <span class="s">'https://cdn.jsdelivr.net/gh/hellosaifuli/sand-portrait@main/sand-portrait.mjs'</span>;
 const sand = SandPortrait(canvas, { src: <span class="s">'me.png'</span>, on: <span class="s">'dark'</span>, color: <span class="s">'#fff'</span> });
 sand.replay();</code></pre>
   </section>
