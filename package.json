@@ -1,0 +1,17 @@
+{
+  "name": "sand-portrait",
+  "version": "1.0.0",
+  "description": "Any image, as sand: dots rise from a sand pile into a portrait, then scatter from the cursor. No dependencies.",
+  "main": "sand-portrait.js",
+  "module": "sand-portrait.mjs",
+  "exports": {
+    ".": { "import": "./sand-portrait.mjs", "require": "./sand-portrait.js" }
+  },
+  "files": ["sand-portrait.js", "sand-portrait.mjs"],
+  "scripts": { "build": "node scripts/build.js" },
+  "keywords": ["canvas", "halftone", "particles", "portrait", "animation", "dots", "sand", "effect"],
+  "author": "Saiful Islam (https://www.hellosaiful.com)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/hellosaifuli/sand-portrait.git" },
+  "homepage": "https://hellosaifuli.github.io/sand-portrait/"
+}
